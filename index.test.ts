@@ -37,11 +37,11 @@ const MOCK = {
 
 describe(".hasPaths", () => {
 	it("with null value for object", () => {
-		expect(hasPaths(MOCK, ["null_value.value"])).toEqual(true);
+		expect(hasPaths(MOCK, ["null_value.value"])).toEqual(false);
 	});
 
 	it("with empty array", () => {
-		expect(hasPaths(MOCK, ["empty_array.value"])).toEqual(true);
+		expect(hasPaths(MOCK, ["empty_array.value"])).toEqual(false);
 	});
 
 	it("with valid array of objects with json path", () => {
